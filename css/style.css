@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Black Italic'),
+    local('PlayfairDisplay-BlackItalic'),
+    url('../fonts/Playfairdisplayblackitalic.woff2') 
+    format('woff2'),
+    url('../fonts/Playfairdisplayblackitalic.woff') 
+    format('woff'), 
+    url('../fonts/Playfairdisplayblackitalic.ttf') 
+    format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Playfair Display';
+    font-size: 50px;
+    text-shadow: 0 0 15px #000;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    background-color: #aeaeaeae;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 1s;
+
+}
+
+.item:hover{
+    flex-basis: 100%;
+}
+
+.item1 {
+    background-image: url(../img/Screenshot_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;  
+}
+.item2 {
+    background-image: url(../img/Screenshot_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.item3 {
+    background-image: url(../img/Screenshot_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.item4 {
+    background-image: url(../img/Screenshot_4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.item5{
+background-image: url(../img/Screenshot_5.jpg);
+background-repeat: no-repeat;
+block-size: cover;
+background-position: center;
+}
+.item6{
+    background-image: url(../img/Screenshot_6.jpeg);
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-position: center;
+}
+.item7{
+    background-image: url(../img/Screenshot_7.jpg);
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-position: center;
+}
+.item8{
+    background-image: url(../img/Screenshot_8.jpg);
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 800px){
+    .slider{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .item{
+        width: 100%;
+    }
+}
