@@ -1,1 +1,1 @@
-# slide.githob.io
+# slide.github.io
